@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Nobile } from "next/font/google";
+const nobile = Nobile({ subsets: ["latin"], weight: ["400", "500", "700"] })
+
+
+import { Jost } from "next/font/google";
+const jost = Jost({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '700', '900'], style: ['normal', 'italic'] })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${jost.className} ${nobile.className}`}>{children}</body>
     </html>
   );
 }

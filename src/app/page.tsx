@@ -1,95 +1,61 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import NavBar from "@/components/nav-bar";
+import Intro from "@/components/intro";
+import About from "@/components/about";
+import Services from "@/components/services";
+import Partners from "@/components/partners";
+import Contact from "@/components/Contact";
 
+import SectionHeader from "@/partials/section-header";
+import Socials from "@/partials/socials";
+import Subscribe from "@/partials/subscripe";
+
+import banner from "@/partials/img/banner.png"
+
+// WARN: this code is property of SimpleMindedGuy, it is only intended for testing my ability, I do not allow of this code to be used publicly.
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={"Page "}>
+      <NavBar></NavBar>
+
+      <section className="Banner-Section" style={{ "backgroundImage": `url(${banner.src})` }}>
+        <div className="Banner-Gradient">
+          <SectionHeader>
+            <p>Welcome to The <b>OurWebsite</b> Your Platform for Launching Towards Technological Success!</p>
+          </SectionHeader>
+
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      <Intro />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+      <About />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+
+      <Services />
+
+      <Partners />
+
+
+      <Contact />
+
+
+      <footer>
+        <SectionHeader>
+          <h2>Subscribe our newsletter</h2>
+          <p>Your download should start automatically, if not Click here. Should I give up, huh?.</p>
+        </SectionHeader>
+
+        <Subscribe />
+
+        <Socials />
+
+        <div className="CopyRight">
+
+          <p>Copyright © 2024OurWebsite . All Right Reserved.</p>
+        </div>
+      </footer>
     </main>
   );
 }
