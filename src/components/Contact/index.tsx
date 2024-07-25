@@ -77,7 +77,7 @@ const Contact = (props: Props) => {
 
       </div>
 
-      <div className="Contact-Map">
+      <div className="Contact-Map" id='Contact Us'>
         <img src={mapImage.src} />
       </div>
 

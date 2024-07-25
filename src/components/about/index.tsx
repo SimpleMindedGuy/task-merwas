@@ -13,7 +13,7 @@ type Props = {}
 const About = (props: Props) => {
   return (
 
-    <section className={"About-Section"}>
+    <section className={"About-Section"} id='About Us'>
       <SectionHeader >
         <h3>About Us</h3>
         <br />

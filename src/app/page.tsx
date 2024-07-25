@@ -17,7 +17,7 @@ export default function Home() {
     <main className={"Page "}>
       <NavBar></NavBar>
 
-      <section className="Banner-Section" style={{ "backgroundImage": `url(${banner.src})` }}>
+      <section id="Home" className="Banner-Section" style={{ "backgroundImage": `url(${banner.src})` }}>
         <div className="Banner-Gradient">
           <SectionHeader>
             <p>Welcome to The <b>OurWebsite</b> Your Platform for Launching Towards Technological Success!</p>

@@ -7,7 +7,7 @@ type Props = {}
 const Services = (props: Props) => {
   return (
 
-    <section className="Service-Section">
+    <section className="Service-Section" id='Services'>
 
       <SectionHeader >
         <h3>Services</h3>

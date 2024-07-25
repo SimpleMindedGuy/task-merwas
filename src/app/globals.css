@@ -221,6 +221,7 @@ body {
 
 
 .Page {
+  padding-top: 6rem;
   display: grid;
   flex-direction: column;
 
@@ -601,7 +602,10 @@ article p {
 
 .Nav-Bar {
   display: block;
+  position: fixed;
   width: 100%;
+  top: 0px;
+  z-index: 10;
 }
 
 .Nav-Socials {

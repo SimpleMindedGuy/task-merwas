@@ -8,7 +8,7 @@ type Props = {}
 const Partners = (props: Props) => {
   return (
 
-    <section className="Partners-Section">
+    <section className="Partners-Section" id='Partners'>
 
       <SectionHeader >
         <h3>Partners</h3>
